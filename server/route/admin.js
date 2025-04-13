@@ -189,9 +189,9 @@ router.put('/edit-posts/:id', authMiddleWare, async (req, res) =>{
           updatedAt: Date.now()
           
       });
-      console.log();
-
+      console.log('Post has been edited and udpated.');
       res.redirect(`/edit-posts/${req.params.id}`);
+      
     } catch (error) {
         console.log(error);
     }
